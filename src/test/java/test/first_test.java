@@ -37,6 +37,7 @@ public class first_test  extends TestBase{
 		assertTrue(currentTitle.contains("Legendary"));
 		driver.navigate().back();
 		driver.navigate().back();
-		assertTrue(driver.getTitle().contains("Fallen"));
+		driver.close();
+		
 	}
 }

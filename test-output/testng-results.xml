@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-03T13:00:28 CDT" name="Default suite" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8787">
+  <suite started-at="2023-08-15T12:18:21 CDT" name="Default suite" finished-at="2023-08-15T12:18:36 CDT" duration-ms="15707">
     <groups>
     </groups>
-    <test started-at="2023-08-03T13:00:28 CDT" name="Default test" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8787">
+    <test started-at="2023-08-15T12:18:21 CDT" name="Default test" finished-at="2023-08-15T12:18:36 CDT" duration-ms="15707">
       <class name="test.first_test">
-        <test-method signature="testEnglishLocale()[pri:0, instance:test.first_test@6d4e5011]" started-at="2023-08-03T13:00:28 CDT" name="testEnglishLocale" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8725" status="PASS">
+        <test-method signature="testEnglishLocale()[pri:0, instance:test.first_test@45099dd3]" started-at="2023-08-15T12:18:21 CDT" name="testEnglishLocale" finished-at="2023-08-15T12:18:36 CDT" duration-ms="15631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnglishLocale -->
