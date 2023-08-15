@@ -5,7 +5,7 @@
     <classes>
       <class name="test.first_test">
         <methods>
-          <include name="testEnglishLocale"/>
+          <include name="test1"/>
         </methods>
       </class> <!-- test.first_test -->
     </classes>

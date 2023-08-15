@@ -4,22 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class index {
+public class index extends PageBase{
 
-	protected WebDriver driver;
+	private WebDriver driver;
+	String CentralLanguage = "//div[contains(@class,'central-featured-lang')]";
 	
 	public index(WebDriver driver) {
-		this.driver=driver;
+		super(driver);
 	}
 	
-	////a[contains(@class,'site-nav__link')] Main navigation bar
-	
-	public index clickByLinkText_MainNav(String linkText) {
-		
-		//a[contains(@class,'site-nav__link')][contains(text(),'SHOES')]
-		WebElement target = driver.findElement(By.xpath("//a[contains(@class,'site-nav__link')][contains(text(),'"+linkText.toUpperCase()+"')]"));
-		target.click();
-
+	public index SelectMainLanguage(String lang) {
+		findByXpath(CentralLanguage+"[@lang='"+lang+"']/a").click();
 		return new index(driver);
 	}
+	
+	
+	
 }
