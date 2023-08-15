@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class index {
+public class index extends PageBase{
 
 	protected WebDriver driver;
 	
 	public index(WebDriver driver) {
-		this.driver=driver;
+		super(driver);
 	}
 	
 	////a[contains(@class,'site-nav__link')] Main navigation bar
