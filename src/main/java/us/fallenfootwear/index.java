@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class index extends PageBase{
 
 	protected WebDriver driver;
-	
+	//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
 	public index(WebDriver driver) {
 		super(driver);
 	}
