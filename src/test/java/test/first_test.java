@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import us.fallenfootwear.index;
+import com.cookandbecker.index;
 
 
 public class first_test  extends TestBase{
