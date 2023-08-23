@@ -5,7 +5,9 @@
     <classes>
       <class name="test.first_test">
         <methods>
-          <include name="testEnglishLocale"/>
+          <include name="inputEmail"/>
+          <include name="init"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- test.first_test -->
     </classes>

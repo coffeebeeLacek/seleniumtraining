@@ -20,24 +20,12 @@ import us.fallenfootwear.index;
 
 
 public class first_test  extends TestBase{
-
-
-	@Test
-	public void test1() throws InterruptedException {
-		
-	}
+	String email = "garrett.gessell@lacek.com";
 	
 	@Test
-	public void testEnglishLocale() throws InterruptedException {
-		WebDriver driver = init("https://fallenfootwear.us/");
-
-		driver.get("https://neopets.com");
-		Thread.sleep(1500);
-		String currentTitle = driver.getTitle();
-		assertTrue(currentTitle.contains("Legendary"));
-		driver.navigate().back();
-		driver.navigate().back();
-		driver.close();
-		
+	public void inputEmail() throws InterruptedException {
+		in.inputEmailToNewsletterModal(email);		
 	}
+	
+	
 }
