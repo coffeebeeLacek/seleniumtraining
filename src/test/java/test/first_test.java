@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,5 +28,18 @@ public class first_test  extends TestBase{
 		in.inputEmailToNewsletterModal(email);		
 	}
 	
+	
+	@Test
+	public void hashExample()	{
+		HashMap<String, String> jordan = new HashMap<String, String>();
+		HashMap<Integer, String> hash = new HashMap<Integer, String>();
+		jordan.put("fav_person", "jordan");
+		jordan.put("jordans_fav_person", "nik");
+		System.out.println(jordan.get("fav_person"));
+		
+		hash.put(1, "first");
+		hash.put(2, "second");
+		System.out.println(hash.get(2));		
+	}
 	
 }

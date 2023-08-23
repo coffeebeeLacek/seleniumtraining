@@ -33,7 +33,6 @@ public class TestBase {
 	@AfterTest
 	public void closeDriver() {
 		driver.close();
-		driver.quit();
 	}
 	
 	

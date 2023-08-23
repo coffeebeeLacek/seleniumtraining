@@ -10,22 +10,22 @@ public class index extends PageBase{
 
 	protected WebDriver driver;
 	
+	//Newsletter elements
 	String newsletterID = "NewsletterPopup-newsletter-popup";
 	String newsletter = "//*[@id='"+newsletterID+"']";
 	
-	//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
+	//Store elements
+	String product_grid = "//div[@class='grid-product__content']";
 	public index(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	////a[contains(@class,'site-nav__link')] Main navigation bar
 	
-	public index clickByLinkText_MainNav(String linkText) {
-		
+	public index clickByLinkText_MainNav(String linkText) {	
 		//a[contains(@class,'site-nav__link')][contains(text(),'SHOES')]
 		WebElement target = driver.findElement(By.xpath("//a[contains(@class,'site-nav__link')][contains(text(),'"+linkText.toUpperCase()+"')]"));
 		target.click();
-
 		return new index(driver);
 	}
 	
