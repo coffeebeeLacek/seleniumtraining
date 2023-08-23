@@ -1,6 +1,8 @@
-package utility;
+package test;
 
 import org.testng.annotations.Test;
+
+import com.cookandbecker.SeleniumBaseTest;
 
 public class SeleniumTest extends SeleniumBaseTest{
 	

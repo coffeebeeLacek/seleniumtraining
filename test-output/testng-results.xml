@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-03T13:00:28 CDT" name="Default suite" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8787">
+  <suite started-at="2023-08-23T11:17:57 CDT" name="Default suite" finished-at="2023-08-23T11:18:06 CDT" duration-ms="9194">
     <groups>
     </groups>
-    <test started-at="2023-08-03T13:00:28 CDT" name="Default test" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8787">
-      <class name="test.first_test">
-        <test-method signature="testEnglishLocale()[pri:0, instance:test.first_test@6d4e5011]" started-at="2023-08-03T13:00:28 CDT" name="testEnglishLocale" finished-at="2023-08-03T13:00:37 CDT" duration-ms="8725" status="PASS">
+    <test started-at="2023-08-23T11:17:57 CDT" name="Default test" finished-at="2023-08-23T11:18:06 CDT" duration-ms="9194">
+      <class name="test.SeleniumTest">
+        <test-method signature="test()[pri:0, instance:test.SeleniumTest@45099dd3]" started-at="2023-08-23T11:17:57 CDT" name="test" finished-at="2023-08-23T11:18:06 CDT" duration-ms="9144" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnglishLocale -->
-      </class> <!-- test.first_test -->
+        </test-method> <!-- test -->
+      </class> <!-- test.SeleniumTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,7 @@
 package com.cookandbecker;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,8 +15,9 @@ public class SeleniumBaseTest {
 	
 	public WebDriver driver;
 	public WebDriverWait wait;
-	String driverPath = System.getProperty("webdriver.chrome.driver", "C:\\\\Users\\\\brent\\\\Documents\\\\BrentM Documents\\\\chromedriver-win32\\\\chromedriver.exe");
-	String URL = "https://www.cookandbecker.com/en";
+	String path = System.getProperty("user.dir") + File.separator + "chromedriver.exe";
+	String driverPath = System.getProperty("webdriver.chrome.driver", path);
+	public String URL = "https://www.cookandbecker.com/en";
 	//public String gameArt = "//a[@class='link link--regular menu-bar__overlay-item']//span[@class='link__span'][normalize-space()='Game art']" ;
 	//                         a[@class='link link--regular menu-bar__overlay-item']//span[@class='link__span'][normalize-space()='Home inspiration']
 	//                         a[@class='link menu-bar__overlay-item link--regular']//span[@class='link__span'][normalize-space()='Books, notebooks and vinyl']
