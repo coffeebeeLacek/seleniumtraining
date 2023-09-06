@@ -5,7 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.time.Duration;
-
+import us.fallenfootwear.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,13 +30,10 @@ public class first_test  extends TestBase{
 	@Test
 	public void testEnglishLocale() throws InterruptedException {
 		WebDriver driver = init("https://fallenfootwear.us/");
-
-		driver.get("https://neopets.com");
-		Thread.sleep(1500);
-		String currentTitle = driver.getTitle();
-		assertTrue(currentTitle.contains("Legendary"));
-		driver.navigate().back();
-		driver.navigate().back();
-		assertTrue(driver.getTitle().contains("Fallen"));
+		PageBase pb = new PageBase(driver);
+		index in = new index(driver);
+		in.enterEmailToNewsletter("garrett.gesel@lacek.com");
+		in.clickSubscribe();
+		
 	}
 }
